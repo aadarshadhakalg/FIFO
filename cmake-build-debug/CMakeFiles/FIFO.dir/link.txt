@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/FIFO.dir/main.cpp.o CMakeFiles/FIFO.dir/ArrayQueue.cpp.o  -o FIFO 

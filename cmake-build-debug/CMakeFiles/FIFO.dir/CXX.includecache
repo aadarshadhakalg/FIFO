@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/aadarsha/Projects/c++/FIFO/ArrayQueue.cpp
+ArrayQueue.h
+/home/aadarsha/Projects/c++/FIFO/ArrayQueue.h
+
+/home/aadarsha/Projects/c++/FIFO/ArrayQueue.h
+iostream
+-
+IQueue.h
+/home/aadarsha/Projects/c++/FIFO/IQueue.h
+
+/home/aadarsha/Projects/c++/FIFO/IQueue.h
+
+/home/aadarsha/Projects/c++/FIFO/main.cpp
+iostream
+-
+ArrayQueue.h
+/home/aadarsha/Projects/c++/FIFO/ArrayQueue.h
+
