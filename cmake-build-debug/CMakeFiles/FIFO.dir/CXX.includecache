@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/aadarsha/Projects/c++/FIFO/ArrayQueue.cpp
-ArrayQueue.h
-/home/aadarsha/Projects/c++/FIFO/ArrayQueue.h
-
 /home/aadarsha/Projects/c++/FIFO/ArrayQueue.h
 iostream
 -

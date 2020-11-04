@@ -4,7 +4,8 @@
 
 #include "ArrayQueue.h"
 
-int ArrayQueue::insert(int a) {
+template <class Type>
+Type ArrayQueue<Type>::insert(Type a) {
     if (pos >= size) {
         throw "Queue is full. Try removing some entries";
     } else {
@@ -16,8 +17,9 @@ int ArrayQueue::insert(int a) {
     return a;
 }
 
-int ArrayQueue::remove() {
-    int removed;
+template <class Type>
+Type ArrayQueue<Type>::remove() {
+    Type removed;
     if (pos == 0) {
         throw "No items in the queue.";
     } else {
@@ -33,12 +35,14 @@ int ArrayQueue::remove() {
     return removed;
 }
 
-int ArrayQueue::front() {
+template <class Type>
+Type ArrayQueue<Type>::front() {
     if (pos == 0) throw "No items in the queue.";
     return f;
 }
 
-int ArrayQueue::rear() {
+template <class Type>
+Type ArrayQueue<Type>::rear() {
     if (pos == 0) throw "No items in the queue.";
     return r;
 }

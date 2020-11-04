@@ -9,7 +9,7 @@ int main() {
             << "Enter the maximum number of items that can be stored in a queue: ";
     std::cin >> n;
 
-    ArrayQueue arr = ArrayQueue(n);
+    ArrayQueue<int> arr = ArrayQueue<int>(n);
     std::cout << "Queue initialized successfully." << std::endl << std::endl;
 
     while (true) {

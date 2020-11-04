@@ -4,13 +4,14 @@
 
 #pragma once
 
+template<class Type>
 class IQueue {
 public:
-    virtual int insert(int a) = 0;
+    virtual Type insert(Type a) = 0;
 
-    virtual int remove() = 0;
+    virtual Type remove() = 0;
 
-    virtual int front() = 0;
+    virtual Type front() = 0;
 
-    virtual int rear() = 0;
+    virtual Type rear() = 0;
 };

@@ -3,24 +3,25 @@
 //
 
 #pragma once
-
 #include <iostream>
 #include "IQueue.h"
 
-class ArrayQueue : public IQueue {
+template <class Type>
+class ArrayQueue : public IQueue<Type> {
+
 private:
-    int size;
-    int *arr, f, r, pos = 0;
+    int size, pos = 0;
+    Type *arr, f, r;
     int i;
 
 public:
-    explicit ArrayQueue(int size) : size(size) { arr = new int(size); }
+    explicit ArrayQueue(int size) : size(size) { arr = new Type(size); }
 
-    int insert(int a) override;
+    Type insert(Type a) override;
 
-    int remove() override;
+    Type remove() override;
 
-    int front() override;
+    Type front() override;
 
-    int rear() override;
+    Type rear() override;
 };
